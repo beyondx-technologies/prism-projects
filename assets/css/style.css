@@ -3978,3 +3978,32 @@ a:visited {
 .service-one__single:hover p {
 	color: #c3afdd;
 }
+
+
+.banner-container{
+	margin-top: 5em;
+	margin-left: 5em;
+	margin-right: 5em;
+	width: auto;
+}
+
+
+.banner-container img{
+	width: auto;
+	height: 35em;
+}
+
+@media(max-width: 500px) {
+	.banner-container{
+		margin-top: 2em;
+		margin-left: 2em;
+		margin-right: 2em;
+		width: auto;
+	}
+
+	.banner-container img{
+		width: auto;
+		height: 15em;
+	}
+
+}
