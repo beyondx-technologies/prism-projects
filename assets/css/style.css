@@ -1553,6 +1553,58 @@ a:visited {
 	transition: all 500ms ease;
 }
 
+
+.contact-widget__newsletter-form {
+	width: 100%;
+	/* background-color: #fff; */
+	border-radius: 15px;
+	position: relative;
+}
+
+.contact-widget__newsletter-form input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]) {
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 71px;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #8b7f9a;
+	font-size: 16px;
+	padding-left: 30px;
+}
+
+.contact-widget__newsletter-form ::placeholder {
+	opacity: 1;
+	color: #8b7f9a;
+}
+
+.contact-widget__newsletter-form input{
+	margin-bottom: 2px;
+}
+
+
+.btn-send {
+	border: none;
+	outline: none;
+	width: auto;
+	padding: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-top:1em; 
+	background-image: linear-gradient(0deg, #b09b22 0%, #dabb32 51%, #d6b72c 100%);
+	color: #fff;
+	font-size: 16px;
+	border-radius: 5%;
+	transition: all 500ms ease;
+}
+
+.contact-widget__newsletter-form button[type=submit]:hover {
+	background-position: bottom;
+	color: #fff;
+}
+
+
+
 .footer-widget__newsletter-form button[type=submit]:hover {
 	background-position: bottom;
 	color: #fff;
