@@ -16,7 +16,7 @@ function sendEmail (obj) {
 }
 
 function loadTemplate (templateName, contexts){
-    let template = new EmailTemplate(path.join(__dirname,'templates',templateName));
+    let template = new EmailTemplate('/var/task/src/templates/welcome');
     return Promise.all(contexts.map((context)=>{
         return new Promise((resolve, reject)=>{
             template.render(context, (err, result)=>{
@@ -78,7 +78,7 @@ exports.handler = async (event)=>{
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sample Site</title>
+    <title>Mail Sent Success ${name}</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>

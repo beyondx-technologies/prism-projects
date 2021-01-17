@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/beyondx-technologies/prism-projects/issues"
   },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "email-templates": "^2.7.1",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^4.7.0"
+  },
   "homepage": "https://github.com/beyondx-technologies/prism-projects#readme"
 }
