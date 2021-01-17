@@ -45,16 +45,9 @@ exports.handler = async (event)=>{
           "email": `${email},prismprojects7@gmail.com`,
           "courses": `${courses}`,
         },
-        // {
-        //     "name": `Vishal`,
-        //     "phone": `8667428082`,
-        //     "email": `vishalvrk97@gmail.com`,
-        //     "courses": `Java`,
-        //   },
        ]
 
-      
-    loadTemplate('welcome',users).then((results)=>{
+       loadTemplate('welcome',users).then((results)=>{
         return Promise.all(results.map((result)=>{
         sendEmail({
                 to: result.context.email,
@@ -70,7 +63,7 @@ exports.handler = async (event)=>{
     }).catch((err)=>{
         console.log(err);
     })
-
+      
     return{
         statusCode: 200,
         body:  `
@@ -93,7 +86,9 @@ exports.handler = async (event)=>{
             <a href="/">Return to prismproject.in</a>
         </div>
     </div>
+<script>
 
+</script>
 </body>
 </html>
         `

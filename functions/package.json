@@ -1,0 +1,25 @@
+{
+  "name": "prismprojects",
+  "version": "1.0.0",
+  "description": "Prism Projects Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyondx-technologies/prism-projects.git"
+  },
+  "author": "Vishal Vaitheeswaran RK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beyondx-technologies/prism-projects/issues"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "email-templates": "^2.7.1",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^4.7.0"
+  },
+  "homepage": "https://github.com/beyondx-technologies/prism-projects#readme"
+}
