@@ -309,41 +309,48 @@
                   <div style="border-radius: 25px; width: 70px; height: 70px; margin-top:-42px " class="card-header bg-white text-center"><img style="height: 45px; width: 45px;" src="assets/images/verify.png" alt="icon"></div>
                 
                 </div>
-                <form >
+                <form id="form" action="/.netlify/functions/email">
                   <div class="form-group row">
                     <label for="Name" class="col-sm-4 col-form-label text-white font-weight-bold">Name</label>
-                    <div class="col-sm"><input type="text" class="form-control" id="inputname" placeholder="Enter your name">
+                    <div class="col-sm">
+                      <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputmailid" class="col-sm-4 col-form-label text-white font-weight-bold">Email ID</label>
                     <div class="col-sm">
-                      <input type="email" class="form-control" id="inputmailid" placeholder="Email Id">
+                      <input type="email" class="form-control" name="email" placeholder="Email Id" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputmailid" class="col-sm-4 col-form-label text-white font-weight-bold">Phone Number</label>
+                    <div class="col-sm">
+                      <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputmailid" class="col-sm-4 col-form-label text-white font-weight-bold">Courses</label>
                     <div class="col-sm">
                     
-                  <select style="width: 100%; border: 0px; height: 100%; " class="form-select rounded" aria-label="Default select example">
+                  <select style="width: 100%; border: 0px; height: 100%; " class="form-select rounded" aria-label="Default select example" name="courses" required>
                     <option selected>Select the Courses</option>
-                    <option value="1">MS OFFICE</option>
-                    <option value="2">JAVA</option>
-                    <option value="3">PYTHON</option>
-                    <option value="4">CATIA</option>
-                    <option value="5">FEA</option>
-                    <option value="6">MAT LAB</option>
-                    <option value="7">NX</option>
-                    <option value="8">ANSYS</option>
-                    <option value="9">STAAD PRO</option>
-                    <option value="10">AUTOCAD</option>
-                    <option value="11">PRIMAVERA P6</option>
-                    <option value="12">MSP</option>
+                    <option value="MS OFFICE">MS OFFICE</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                    <option value="CATIA">CATIA</option>
+                    <option value="FEA">FEA</option>
+                    <option value="MAT LAB">MAT LAB</option>
+                    <option value="NX">NX</option>
+                    <option value="ANSYS">ANSYS</option>
+                    <option value="STAAD PRO">STAAD PRO</option>
+                    <option value="AUTOCAD">AUTOCAD</option>
+                    <option value="PRIMAVERA P6">PRIMAVERA P6</option>
+                    <option value="MSP">MSP</option>
                   </select>
                     </div>
                   </div>
                   <div class="row justify-content-center">
-                    <a class="btn btn-success text-white ">Submit</a>
+                    <button type="submit" class="btn btn-success text-white ">Submit</button>
                   </div>
                   
                 </form>
@@ -563,6 +570,7 @@
           document.addEventListener('DOMContentLoaded', function () {
           window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);
         });
+
     </script>
   </body>
 </html>
